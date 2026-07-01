@@ -25,7 +25,7 @@ class RedisTelemetryStore:
         # Fetch environment variables safely
         redis_host = os.getenv("REDISHOST", os.getenv("REDISHOST", "redis.railway.internal"))
         raw_port = os.getenv("REDISPORT", os.getenv("REDISPORT", "6379"))
-        redis_password= os.getenv("REDISPASSWORD","crAzOTGOyZIchveBAxtgjkioHMjbtvnD")
+        redis_password= os.getenv("REDISPASSWORD","password")
         redis_username= os.getenv("REDISUSER","default")
 
         # Strip spaces and fall back to 6379 if the string is empty
