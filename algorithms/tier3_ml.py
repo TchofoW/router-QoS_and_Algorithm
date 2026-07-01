@@ -10,7 +10,7 @@ from core.telemetry_store import EnrichedContextMatrix
 class Tier3MLEngine:
     # Use the same Redis configuration parameters
     _redis_host = os.getenv("REDIS_HOST", "redis.railway.internal")
-    _redis_password = os.getenv("REDISPASSWORD","crAzOTGOyZIchveBAxtgjkioHMjbtvnD")
+    _redis_password = os.getenv("REDISPASSWORD","password")
     _redis_user= os.getenv("REDISUSER","default")
     
     # Safe parsing: read environment string, strip whitespace, fall back if empty
